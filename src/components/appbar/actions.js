@@ -2,6 +2,7 @@
 import { Favorite, Person, ShoppingCartRounded } from "@mui/icons-material";
 import { Divider, ListItemButton, ListItemIcon } from "@mui/material";
 import { ActionIconsContainerDesktop, ActionIconsContainerMobile, MyList } from "../../styles/appbar";
+import { colors } from "../../styles/theme";
 
 
 
@@ -21,6 +22,7 @@ export default function Actions({matches}) {
                 sx={{
                     display:'flex',
                     justifyContent:'center',
+                    color:matches&& colors.secondary,
                 }}
                 >
                     <ShoppingCartRounded/>
@@ -34,6 +36,7 @@ export default function Actions({matches}) {
                 <ListItemIcon  sx={{
                     display:'flex',
                     justifyContent:'center',
+                    color:matches&& colors.secondary,
                 }}
                 >
                     <Favorite/>
@@ -47,6 +50,7 @@ export default function Actions({matches}) {
                 <ListItemIcon  sx={{
                     display:'flex',
                     justifyContent:'center',
+                    color:matches&& colors.secondary,
                 }}
                 >
                     <Person/>
