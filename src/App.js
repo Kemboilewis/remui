@@ -2,6 +2,7 @@ import { Button, Container, ThemeProvider } from "@mui/material";
 import { useEffect } from "react";
 import Appbar from "./components/appbar";
 import Banner from "./components/banner";
+import Promotions from "./components/promotions";
 import theme from "./styles/theme";
 
 
@@ -21,11 +22,9 @@ function App() {
       >
         <Appbar/>
         <Banner/>
+        <Promotions/>
         {
           /*
-         
-          banner
-          promotions
           title
           products
           footer
@@ -34,7 +33,7 @@ function App() {
           */
         }
         
-          <Button variant="contained" >Testing button</Button>
+          
       
       </Container>
 
